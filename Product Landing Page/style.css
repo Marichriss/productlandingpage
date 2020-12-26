@@ -1,0 +1,339 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: purple;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed' sans-serif;
+    color:salmon;
+}
+
+.header-top {
+    height: 75px;
+}
+
+header {
+    width: 100%;
+    height:60px;
+    border-bottom: 1px solid salmon;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    background-color: purple;   
+}
+
+.main {
+    padding: 1rem;
+    margin: 20px 25px;
+}
+
+#nav-bar ul {
+    list-style: none;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: salmon;
+    transition: .5s;
+}
+
+
+#header-img {
+    width: 60px;
+    height: 50px;
+    margin-right: auto;
+    cursor: pointer;
+    padding: 4px 2px;
+}
+
+
+#video {
+    padding: 70px 70px;
+    width: 700px;
+    height: 500px;
+}
+
+video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#video-text > h1 {
+    color:salmon;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: oblique;
+    text-align: center;
+}
+
+#video-text > p {
+    color: salmon;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#form {
+    background-color: rgb(85, 81, 81);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: salmon;
+    margin: 20px 10px;
+    border: 1px solid salmon;
+}
+
+#form .email {
+    padding: 40px;
+}
+
+#form input {
+    border: 1px solid salmon;
+    width: 300px;
+    height: 25px;
+}
+
+#form .submit input {
+    background-color: pink;
+    color: fff;
+    font-size:20px;
+    height: 40px;
+    box-shadow: 2px 2px 2px salmon;
+}
+
+#form .submit {
+    padding: 20px;
+}
+
+.services {
+    background-color: rgb(85, 81, 81);
+    padding: 20px 50px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    color: fff;
+    border: 1px solid salmon;
+}
+
+.detail-services {
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid salmon;
+}
+
+.detail-services:last-child {
+    border-bottom: 0px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.newsletter {
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 50px;
+    padding: 20px 20px;
+    border: 1px solid salmon;
+}
+
+.periodtapp {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 50px;
+    padding: 20px 15px;
+    border: 1px solid salmon;
+}
+
+.donate {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 20px 50px;
+    padding: 30px 20px;
+    border: 1px solid salmon;
+}
+
+.subscribe input {
+    background-color: pink;
+    width: auto;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color:  rgb(85, 81, 81);
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    border-top: 1px solid salmon;
+    padding: 20px;
+    font-style: oblique;
+    margin-top: 50px;
+}
+
+/* About */
+.about-main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px 60px;
+    height: 90vh;
+}
+
+.about-main #about {
+    width: 65%;
+}
+
+.about-main aside {
+    width: 25%;
+}
+
+aside {
+    background-color: rgb(85, 81, 81);
+    padding: 0px 20px 5px 10px;
+    margin: 2px, 5px;
+}
+
+#about p {
+    text-align: justify;
+}
+
+aside h3 {
+    margin: 0;
+    padding: 5px 5px;
+    color: salmon;
+}
+
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 5px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: salmon;
+}
+
+
+/* Contact */
+.main-contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding:150px 150px;
+    background-color: rgb(85, 81, 81);
+}
+
+.main-contact form div {
+    padding: 20px 20px;
+}
+
+.main-contact form label {
+    padding-right: 1rem;
+    font-size: 20px;
+}
+
+.main-contact form input {
+    display: block;
+    margin: 10px 0;
+}
+
+textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+.submit-contact [type="submit"] {
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 10px 10px;
+    margin-left: 30%;
+}
+
+@media (max-width: 760px) {
+    #header-img {
+        display: none;
+    }
+
+    #nav-bar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    video {
+        width: 130px;
+        height: 150px;
+    }
+
+    .video-text h2 {
+        font-size: 16px;
+    }
+
+    .video-text p {
+        font-size: 16px;
+    }
+
+    .fa-3x {
+        font-size: 32px;
+    }
+
+    .services h2 {
+        font-size: 18px;
+    }
+
+    .services p {
+        font-size: 16px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #about h1 {
+        font-size: 18px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    aside h3 {
+        font-size: 16px;
+    }
+
+
+}
